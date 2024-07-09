@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "setUsername.schema.json",
+    "title": "setUsername",
+    "description": "commit the randomness of the server before hand",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "description": "Id of the user that wants to start the game",
+            "type": "integer"
+        },
+        "userName": {
+            "description": "Id of the user that wants to start the game",
+            "type": "string"
+        }
+    },
+    "required": [
+        "userId",
+        "userName"
+    ],
+    "additionalProperties": false
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "reveal.schema.json",
+  "title": "reveal",
+  "description": "Check containers health JSON schema",
+  "type": "object",
+  "properties": {
+    "gameNonceReceived": {
+      "description": "Game nonce, should match the one of the initial commit",
+      "type": "string"
+    },
+    "choice": {
+      "description": "True for heads, and false for tails",
+      "type": "boolean"
+    },
+    "amount": {
+      "description": "Amount of bet",
+      "type": "number"
+    },
+    "signedMessage": {
+      "description": "Compressed signatrue of the message",
+      "type": "string"
+    },
+    "userPublicKey": {
+      "description": "public key that signed the message",
+      "type": "string"
+    }
+  },
+
+  "required": ["gameNonceReceived", "choice", "amount", "userPublicKey", "signedMessage"],
+
+  "additionalProperties": false
+}

@@ -1,0 +1,90 @@
+.modal {
+	position: fixed;
+	inset: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	display: none;
+	z-index: 1;
+
+	&_back {
+		position: fixed;
+		background-color: rgba(0, 0, 0, 0.8);
+		width: 100vw;
+		height: 100vh;
+	}
+
+	&.show {
+		display: flex;
+	}
+
+	&__content {
+		background-color: rgba(14, 20, 37, 1);
+		border-radius: 16px;
+		color: var(--white);
+		position: relative;
+		padding: 32px 16px;
+	}
+
+	&__btn {
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		outline: 0;
+		position: absolute;
+		right: 16px;
+		top: 16px;
+		// transform: translate(40%, -40%);
+		cursor: pointer;
+	}
+
+	&__heading {
+		font-family: 'Play';
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		line-height: 27.77px;
+		color: rgba(253, 205, 0, 1);
+	}
+
+	&__text {
+		font-family: 'Play';
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 18.51px;
+		margin: 20px 0;
+		color: rgba(255, 255, 255, 1)		;
+	}
+
+	&__anchor {
+		text-decoration: none;
+		color: var(--white);
+		font-weight: bold;
+	}
+
+	&__seprator {
+		height: 3px;
+		width: 450px;
+		background-color: var(--white);
+		margin: 20px auto 0;
+	}
+
+	&__btn-wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		button {
+			width: 418px;
+			display: flex;
+			justify-content: center;
+			background-color: rgba(20, 29, 52, 1);
+			border-radius: 8.9px;
+						img {
+				width: unset;
+			}
+		}
+	}
+}

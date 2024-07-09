@@ -1,0 +1,120 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	img {
+		width: 160px;
+	}
+
+	&_separator {
+		width: 2px;
+		height: 33px;
+		background-color: white;
+	}
+
+	&_balance {
+		font-family: "Press Start 2P";
+		font-size: 32px;
+		font-weight: 400;
+		line-height: 32px;
+		letter-spacing: 0em;
+		color: rgba(253, 205, 0, 1);
+		text-shadow: 0px 0px 24px rgba(253, 205, 0, 1) inset;
+		text-shadow: 0px 2px 12px rgba(253, 205, 0, 1);
+		text-shadow: 0px 2px 44px rgba(253, 205, 0, 1);
+		position: relative;
+
+		span {
+			position: absolute;
+			font-size: 16px;
+			top: -8px;
+			right: -70px;
+		}
+	}
+}
+
+.header__nav {
+	position: absolute;
+	right: 0;
+	top: calc(100% + 20px);
+	overflow: hidden;
+}
+
+.header__list {
+	list-style: none;
+	text-align: right;
+	transition: all 0.3s;
+	transform: translateX(100%);
+}
+
+.header__list.open {
+	transform: translateX(0);
+}
+
+.header__item {
+	margin: 10px 0;
+	cursor: pointer;
+}
+
+.header__link {
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: var(--white);
+}
+
+.header__wrap {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.header__box {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.header {
+	&__profile {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+
+		&-figure {
+			width: 39px;
+			height: 39px;
+			border-radius: 50%;
+			position: relative;
+		}
+
+		&-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		&-notification {
+			width: 20px;
+			height: 20px;
+			overflow: hidden;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transform: translate(40%, -40%);
+		}
+	}
+
+	&__profile-share {
+		margin-left: 10px;
+	}
+}

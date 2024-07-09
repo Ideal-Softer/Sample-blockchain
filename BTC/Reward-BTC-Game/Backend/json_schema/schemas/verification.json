@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "verification.schema.json",
+    "title": "verification",
+    "description": "verification",
+    "type": "object",
+    "properties": {
+        "userId": {
+            "description": "userId",
+            "type": "integer"
+        },
+        "gameNonce": {
+            "description": "gameNonce",
+            "type": "string"
+        },
+        "status": {
+            "description": "status",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "userId",
+        "gameNonce",
+        "status"
+    ],
+    "additionalProperties": false
+}

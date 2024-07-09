@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "deposit.schema.json",
+  "title": "deposit",
+  "description": "deposit btc",
+  "type": "object",
+  "properties": {
+    "transactionId": {
+      "description": "transaction ID of the deposit to monitor for deposits",
+      "type": "string"
+    },
+    "userId": {
+      "description": "Id of the user that want to deposit BTC20",
+      "type": "number"
+    },
+    "address": {
+      "description": "Id of the user that want to perform the exchange of BTC for BRC20",
+      "type": "string"
+    }
+  },
+  "required": [
+    "userId",
+    "transactionId",
+    "address"
+  ],
+  "additionalProperties": false
+}

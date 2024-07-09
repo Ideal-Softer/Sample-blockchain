@@ -1,0 +1,45 @@
+.footer {
+	padding: 0px 60px;
+	gap: 60px;
+	position: relative;
+	text-align: center;
+}
+
+.footer__heading {
+	color: var(--white);
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Play';
+	margin-bottom: 8px;
+	line-height: 18.51px;
+	float: left;
+}
+
+.footer__heading-number {
+	color: #fff;
+}
+
+.footer__subheading {
+	color: var(--gray);
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Play';
+	line-height: 18.51px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	span {
+		font-weight: 400;
+	}
+}
+
+.footer__container {
+	margin: auto;
+	position: relative;
+
+	@media (max-width: 1440px) {
+		width: 1200px;
+	}
+}
